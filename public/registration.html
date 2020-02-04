@@ -1,0 +1,289 @@
+<!-- <!DOCTYPE html>
+<html>
+
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+ <body>
+    <div id="register" class="animate form">
+        <form  action="/insert" autocomplete="on" method="POST"> 
+            <h1> Sign up </h1> 
+            <p> 
+                <label for="usernamesignup" class="Name" data-icon="u">Your name</label>
+                <input id="nameSignup" name="nameSignup" required="required" type="text" placeholder="name" />
+            </p>
+            <p> 
+                <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                <input id="emailSignup" name="emailSignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+            </p>
+            <p>
+                <select  id="collegeNameSignup" name="college_name" >
+                    <option slected value="">College</option>
+                    <option value="Adarsha Institute of Management (AIM-Goa), Fatorda">Adarsha Institute of Management (AIM-Goa), Fatorda</option>
+                    <option value="Agnel Institute of Technology and Design, Assagao">Agnel Institute of Technology and Design, Assagao</option>
+                    <option value="B. S. P. Gomantak Ayurveda Mahavidyalaya, Shiroda">B. S. P. Gomantak Ayurveda Mahavidyalaya, Shiroda</option>
+                    <option value="Birla Institute of Technology & Science, Pilani - Goa Campus">Birla Institute of Technology & Science, Pilani - Goa Campus</option>
+                    <option value="">C. E. S. College of Arts & Commerce, Cuncolim</option>
+                    <option value="">Carmel College of Arts, Science & Commerce, Nuvem, Salcete</option value="">
+                    <option value="">Devi Shreevani Education Society's Goa Institute of Management Studies</option value="">
+                    <option value="">Dnyanprassarak Mandalâ€™s College, Assagao, Goa</option value="">
+                    <option value="">Don Bosco College of Engineering</option value="">
+                    <option value="">Shri Gopal Govind Poi Raiturkar College of Commerce & Economics</option value="">
+                    <option value="">G. V. M.'s College of Education, Ponda</option value="">
+                    <option value="">Goa College of Architecture</option value="">
+                    <option value="">Goa College of Home Science, Panaji</option value="">
+                    <option value="">Goa College of Music, Altinho, Panaji</option value="">
+                    <option value="">Goa College of Pharmacy, Panaji</option value="">
+                    <option value="">Goa Dental College, Bambolim</option value="">
+                    <option value="">Goa Engineering College, Farmagudi</option value="">
+                    <option value="">Goa Institute of Management, Sanquelim</option>
+                    <option value="">Goa Medical College, Bambolim</option value="">
+                    <option value="">Goa Salesian Society, Don Bosco, Panaji</option value="">
+                    <option value=""> Goa University, Bambolim</option value="">
+                    <option value="">Government Polytechnic, Panaji</option value="">
+                    <option value="">Government College of Arts, Science and Commerce, Khandola</option value="">
+                    <option value="">Government College of Arts and Commerce,Pernem</option value="">
+                    <option value="">Govt. College of Arts, Science & Commerce, Quepem</option value="">
+                    <option value="">Govt. College of Arts, Science & Commerce, Sanquelim</option value="">
+                    <!-- yaha tk daaldiye naame 
+                    <option>Govind Ramnath Kare College of Law, Margao</option>
+                    <option> Indian Institute of Technology Goa</option>
+                    <option>Institute of Hotel Management, Catering Technology & Applied Nutrition</option>
+                    <option>Institute of Nursing Education, Panjim, Goa</option>
+                    <option>Institute of Psychiatry and Human Behaviour, Bambolim</option>
+                    <option>Institute Shipbuilding Technology, Goa</option>
+                    <option>Marian Institute of Health Sector Management</option>
+                    <option>National Hydrographic School,Vasco-da-Gama, Goa</option>
+                    <option>National Institute of Technology, Goa</option>
+                    <option>Naval Academy, INS Mandovi, Verem</option>
+                    <option>Nirmala Institute of Education, Altinho, Panaji</option>
+                    <option>P. E. S. College of Arts & Science, Farmagudi</option>
+                    <option>P.E.S Rajaram and Tarabai Bandekar College of Pharmacy, Farmagudi</option>
+                    <option>Padre Conceicao College of Engineering, Verna</option>
+                    <option>PES College of Education, Farmagudi</option>
+                    <option>Rosary College of Commerce & Arts,Navelim, Salcete</option>
+                    <option> S. S. Dempo College of Commerce & Economics, Altinho, Panaji</option>
+                    <option>Saraswat Vidyalaya's College of Commerce & Management Studies</option>
+                    <option>Shree Damodar College of Commerce & Economics, Comba</option>
+                    <option>Shree Mallikarjun College of Arts & Commerce, Delem, Canacona</option>
+                    <option>Shree Rayeshwar Institute of Engineering and Information Technology</option>
+                    <option>Shri Kamaxshi Devi Homeopathic Medical College & Hospital</option>
+                    <option>P.E.S.V.P College of Commerce,Education,Computer and Management</option>
+                    <option>Smt Parvatibai Chowgule College, Margao</option>
+                    <option>The One School Goa, Photography,Film making, Ucassaim</option>
+                    <option>Sri Sri Institute of Management Studies, Margao</option>
+                    <option>St. Xavier's College, Mapusa, Goa</option>
+                    <option>V. M. Salgaocar College of Law, Miramar, Panaji</option>
+                    <option>V. V. Mandal's Institute of Management Training and Research</option>
+                    <option>X. E. S. Fr. Agnel College of Arts & Comm, Pilar, Goa</option>
+                    <!-- <option>Zantye Brother's Educational Foundation's Narayan Zantye College of Commerce</option> 
+                    <option>Swami Vivekanand Vidyalaya's college of commerce, Bori, Ponda-Goa</option>
+                    <option>Goa Multi-Faculty College</option>
+                    <option>Our Lady OF Lourdes Higher Secondary Valpoi</option>
+                    <option>DCT's Dhempe College of Arts and Science, Miramar, Panaji Goa</option>
+                      
+                      
+                  </select>
+            </p>
+            <p>
+                <select id="courseSignup" name="course_type" id="course_type">
+                    <option slected value="">Course Type</option>
+                    <option value="society">BTech</option>
+                    <option value="language">BBA</option>
+                </select>
+            </p>
+            <div class="form-control">
+                <label for="enrollmentSignup" class="enrollmentSignup" data-icon="p">Enrollment </label>
+                <input id="enrollmentSignup" name="enrollmentSignup" required="required" type="text" placeholder="Enrollment no."/>
+            </div>
+            
+            <p> 
+                <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                <input id="passwordSignup" name="passwordSignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+            </p>
+            <p> 
+                <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+            </p>
+            <p class="signin button"> 
+                <input type="submit" value="Sign up"/> 
+            </p>
+            <p class="change_link">  
+                Already a member ?
+                <a href="/" class="to_register"> Go and log in </a>
+            </p>
+        </form>
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ALUMGRAM </title>
+    
+    
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700"> -->
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+   
+  </head>
+  <body>
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog modal-md vertical-align-center">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-cross"></i></button>
+            <div class="probootstrap-modal-flex">
+              <div class="probootstrap-modal-figure" style="background-image: url(form-img.jpg);"></div>
+              <div class="probootstrap-modal-content">
+                <!-- Form of signup ; # par redirect karna pdega after fetching all form data -->
+                <!-- <form action="x.html" class="probootstrap-form">      -->
+                    <form  action="/insert" autocomplete="on" method="POST" class="probootstrap-form">
+                  <div class="form-group">
+                    <input class="form-control"id="nameSignup" name="nameSignup" required="required" type="text" placeholder="name" />
+                    <!-- <input type="text" name="Name" id="nameSignup" class="form-control" placeholder="Name"> -->
+                  </div>
+                  <div class="form-control">
+                    
+                    <select id="courseSignup" name="course_type" id="course_type">
+                        <option slected value="">Course Type</option>
+                        <option value="society">BTech</option>
+                        <option value="language">BBA</option>
+                    </select>
+                  </div>
+                  <div class="form-control">
+                      
+                    <select  id="collegeNameSignup" name="college_name" >
+                      <option slected value="">College</option>
+                      <option value="Adarsha Institute of Management (AIM-Goa), Fatorda">Adarsha Institute of Management (AIM-Goa), Fatorda</option>
+                      <option value="Agnel Institute of Technology and Design, Assagao">Agnel Institute of Technology and Design, Assagao</option>
+                      <option value="B. S. P. Gomantak Ayurveda Mahavidyalaya, Shiroda">B. S. P. Gomantak Ayurveda Mahavidyalaya, Shiroda</option>
+                      <option value="Birla Institute of Technology & Science, Pilani - Goa Campus">Birla Institute of Technology & Science, Pilani - Goa Campus</option>
+                      <option value="">C. E. S. College of Arts & Commerce, Cuncolim</option>
+                      <option value="">Carmel College of Arts, Science & Commerce, Nuvem, Salcete</option value="">
+                      <option value="">Devi Shreevani Education Society's Goa Institute of Management Studies</option value="">
+                      <option value="">Dnyanprassarak Mandal’s College, Assagao, Goa</option value="">
+                      <option value="">Don Bosco College of Engineering</option value="">
+                      <option value="">Shri Gopal Govind Poi Raiturkar College of Commerce & Economics</option value="">
+                      <option value="">G. V. M.'s College of Education, Ponda</option value="">
+                      <option value="">Goa College of Architecture</option value="">
+                      <option value="">Goa College of Home Science, Panaji</option value="">
+                      <option value="">Goa College of Music, Altinho, Panaji</option value="">
+                      <option value="">Goa College of Pharmacy, Panaji</option value="">
+                      <option value="">Goa Dental College, Bambolim</option value="">
+                      <option value="">Goa Engineering College, Farmagudi</option value="">
+                      <option value="">Goa Institute of Management, Sanquelim</option>
+                      <option value="">Goa Medical College, Bambolim</option value="">
+                      <option value="">Goa Salesian Society, Don Bosco, Panaji</option value="">
+                      <option value=""> Goa University, Bambolim</option value="">
+                      <option value="">Government Polytechnic, Panaji</option value="">
+                      <option value="">Government College of Arts, Science and Commerce, Khandola</option value="">
+                      <option value="">Government College of Arts and Commerce,Pernem</option value="">
+                      <option value="">Govt. College of Arts, Science & Commerce, Quepem</option value="">
+                      <option value="">Govt. College of Arts, Science & Commerce, Sanquelim</option value="">
+                      <!-- yaha tk daaldiye naame -->
+                      <option>Govind Ramnath Kare College of Law, Margao</option>
+                      <option> Indian Institute of Technology Goa</option>
+                      <option>Institute of Hotel Management, Catering Technology & Applied Nutrition</option>
+                      <option>Institute of Nursing Education, Panjim, Goa</option>
+                      <option>Institute of Psychiatry and Human Behaviour, Bambolim</option>
+                      <option>Institute Shipbuilding Technology, Goa</option>
+                      <option>Marian Institute of Health Sector Management</option>
+                      <option>National Hydrographic School,Vasco-da-Gama, Goa</option>
+                      <option>National Institute of Technology, Goa</option>
+                      <option>Naval Academy, INS Mandovi, Verem</option>
+                      <option>Nirmala Institute of Education, Altinho, Panaji</option>
+                      <option>P. E. S. College of Arts & Science, Farmagudi</option>
+                      <option>P.E.S Rajaram and Tarabai Bandekar College of Pharmacy, Farmagudi</option>
+                      <option>Padre Conceicao College of Engineering, Verna</option>
+                      <option>PES College of Education, Farmagudi</option>
+                      <option>Rosary College of Commerce & Arts,Navelim, Salcete</option>
+                      <option> S. S. Dempo College of Commerce & Economics, Altinho, Panaji</option>
+                      <option>Saraswat Vidyalaya's College of Commerce & Management Studies</option>
+                      <option>Shree Damodar College of Commerce & Economics, Comba</option>
+                      <option>Shree Mallikarjun College of Arts & Commerce, Delem, Canacona</option>
+                      <option>Shree Rayeshwar Institute of Engineering and Information Technology</option>
+                      <option>Shri Kamaxshi Devi Homeopathic Medical College & Hospital</option>
+                      <option>P.E.S.V.P College of Commerce,Education,Computer and Management</option>
+                      <option>Smt Parvatibai Chowgule College, Margao</option>
+                      <option>The One School Goa, Photography,Film making, Ucassaim</option>
+                      <option>Sri Sri Institute of Management Studies, Margao</option>
+                      <option>St. Xavier's College, Mapusa, Goa</option>
+                      <option>V. M. Salgaocar College of Law, Miramar, Panaji</option>
+                      <option>V. V. Mandal's Institute of Management Training and Research</option>
+                      <option>X. E. S. Fr. Agnel College of Arts & Comm, Pilar, Goa</option>
+                      <!-- <option>Zantye Brother's Educational Foundation's Narayan Zantye College of Commerce</option> -->
+                      <option>Swami Vivekanand Vidyalaya's college of commerce, Bori, Ponda-Goa</option>
+                      <option>Goa Multi-Faculty College</option>
+                      <option>Our Lady OF Lourdes Higher Secondary Valpoi</option>
+                      <option>DCT's Dhempe College of Arts and Science, Miramar, Panaji Goa</option>
+                        
+                        
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <input id="enrollmentSignup" class="form-control" name="enrollmentSignup" required="required" type="text" placeholder="Enrollment no."/>
+                    <!-- <input type="text" name="Enrollment" id="enrollmentSignup" class="form-control" placeholder="Enrollment"> -->
+                  </div> 
+                  <div class="form-group">
+                    <input id="emailSignup" class="form-control" name="emailSignup" required="required" type="email" placeholder="Mail id"/>
+                    <!-- <input type="text" name="Email" id="emailSignup" class="form-control" placeholder="Email"> -->
+                  </div> 
+
+                  <div class="form-group">
+                    <input id="passwordSignup" class="form-control" name="passwordSignup" required="required" type="password" placeholder="Password"/>
+                    <!-- <input type="password" class="form-control" placeholder="Password" id="passwordSignup"> -->
+                  </div> 
+                  <div class="form-group">
+                    <input id="passwordsignup_confirm" class="form-control" name="passwordsignup_confirm" required="required" type="password" placeholder="Retype password"/>
+                    <!-- <input type="password" class="form-control" placeholder="Re-type Password" id="repasswordSignup"> -->
+                  </div> 
+            <!--      <div class="form-group clearfix mb40">
+                    <label for="remember" class="probootstrap-remember"><input type="checkbox" id="remember"> Remember Me</label>
+                    <a href="#" class="probootstrap-forgot">Forgot Password?</a>
+                  </div> -->
+                  <div class="form-group text-left">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="submit" class="btn btn-primary btn-block" value="Sign up"/>
+                        <!-- <input type="submit" class="btn btn-primary btn-block" value="Sign Up"> -->
+                      </div>
+                    </div>  
+                    
+                  </div> <!--
+                  <div class="form-group probootstrap-or">
+                    <span><em>or</em></span>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <button class="btn btn-primary btn-ghost btn-block btn-connect-facebook"><span>connect with</span> Facebook</button>
+                        <button class="btn btn-primary btn-ghost btn-block btn-connect-google"><span>connect with</span> Google</button>
+                        <button class="btn btn-primary btn-ghost btn-block btn-connect-twitter"><span>connect with</span> Twitter</button>
+                      </div>
+                    </div>
+                  </div> -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/custom.min.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
